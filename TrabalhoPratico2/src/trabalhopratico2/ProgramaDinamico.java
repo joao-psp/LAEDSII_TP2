@@ -31,20 +31,20 @@ public class ProgramaDinamico {
         f1[0] = e1 + a1[0];
         f2[0] = e2 + a2[0];
         System.out.println("Tempos na Estação 1");
-        System.out.print("Station\t\t:");
+        System.out.print("Estação\t\t:");
         for (int i = 0; i < n; i++) {
             System.out.print(" " + (i + 1));
         }
-        System.out.print("\nAssembly Time\t:");
+        System.out.print("\nTempo\t\t:");
         for (int i = 0; i < n; i++) {
             System.out.print(" " + a1[i]);
         }
         System.out.println("\n\nTempos na Estação 2");
-        System.out.print("Station\t\t:");
+        System.out.print("Estação\t\t:");
         for (int i = 0; i < n; i++) {
             System.out.print(" " + (i + 1));
         }
-        System.out.print("\nAssembly Time\t:");
+        System.out.print("\nTempo\t\t:");
         for (int i = 0; i < n; i++) {
             System.out.print(" " + a2[i]);
         }
@@ -78,7 +78,7 @@ public class ProgramaDinamico {
         System.out.println("Tempos de Entrada e1=" + e1 + " and e2=" + e2);
         System.out.println("Tempos de Saida x1=" + x1 + " and x2=" + x2);
         System.out.println();
-        System.out.println("Optimal Time is: " + f);
+        System.out.println("Tempo Ótimo: " + f);
 
         System.out.println("\n\nCaminho Ótimo\n");
         k = l;
