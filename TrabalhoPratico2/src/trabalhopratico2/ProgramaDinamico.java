@@ -81,9 +81,9 @@ public class ProgramaDinamico {
         System.out.println("Optimal Time is: " + f);
 
         System.out.println("\n\nCaminho Ótimo\n");
-        System.out.println("Linha " + l + " Estação " + n);
         k = l;
-        for (int j = 5; j >= 1; j--) {
+        System.out.println("Linha " + l + " Estação " + n);
+        for (int j = n-1; j >= 1; j--) {
 
             if (k == 1) {
                 k = l1[j];
