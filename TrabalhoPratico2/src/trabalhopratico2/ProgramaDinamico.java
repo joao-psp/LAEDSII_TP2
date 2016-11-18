@@ -28,8 +28,8 @@ public class ProgramaDinamico {
         f2 = new int[n];
         l1 = new int[n];
         l2 = new int[n];
-        f1[0] = e1 + a1[0];
-        f2[0] = e2 + a2[0];
+        f1[0] = e1 + a1[0]; //No primeiro momento é pego os primeiros elementos
+        f2[0] = e2 + a2[0]; //e somar nas variaveis
         System.out.println("Tempos na Estação 1");
         System.out.print("Estação\t\t:");
         for (int i = 0; i < n; i++) {
@@ -48,7 +48,9 @@ public class ProgramaDinamico {
         for (int i = 0; i < n; i++) {
             System.out.print(" " + a2[i]);
         }
-
+        // A programação dinamica leva em conta os caminhos anteriores
+        // logo, os caminhos anteriores importam, logo não é parecido
+        // com o guloso.
 
         for (int j = 1; j < n; j++) {
             if ((f1[j - 1] + a1[j]) <= (f2[j - 1] + t2[j - 1] + a1[j])) {

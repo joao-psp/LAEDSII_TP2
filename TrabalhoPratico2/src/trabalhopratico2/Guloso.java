@@ -57,7 +57,8 @@ public class Guloso {
             f+=x2;
             k = 2;
         }
-
+        // O algoritmo guloso pega o elemento do momento e compara se o tempo dele
+        // é menor do que o outro não considerando nada alémz
         for (int j = 1; j < n; j++) {
             if (a1[j] <= t1[j-1]) {
                 f+=a1[j];
