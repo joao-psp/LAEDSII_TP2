@@ -35,6 +35,18 @@ public class trabalhopratico2 {
         
         ProgramaDinamico Linha2 = new ProgramaDinamico();
         Linha2.LinhaMontageDinamica(a3,a4,t3,t4,e1,e2,x1,x2);
+        
+        System.out.println("");
+        System.out.println("-----------------PROBLEMA 3----------");
+        System.out.println("");
+        int[] t5 = {4,2,7,2,5,8,2};
+        int[] t6 = {6,1,7,3,6,4,5};
+        int[] a5 = {10,6,3,8,5,3,7,12};
+        int[] a6 = {3,5,3,7,6,4,9,10};
+         e1 = 5; e2 = 7; x1 = 8; x2 = 9;
+        
+        Guloso gul = new Guloso();
+        gul.LinhaMontagemGuloso(a5,a6,t5,t6,e1,e2,x1,x2);
     
     
     
