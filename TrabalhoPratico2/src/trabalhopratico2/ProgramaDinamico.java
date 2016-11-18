@@ -52,7 +52,7 @@ public class ProgramaDinamico {
         // logo, os caminhos anteriores importam, logo não é parecido
         // com o guloso.
 
-        for (int j = 1; j < n; j++) {
+        for (int j = 1; j < n; j++) {// Parte iterativa da progDinmica que armazena em F11 e F2 os caminhos possiveis
             if ((f1[j - 1] + a1[j]) <= (f2[j - 1] + t2[j - 1] + a1[j])) {
                 f1[j] = f1[j - 1] + a1[j];
                 l1[j] = 1;
@@ -69,7 +69,7 @@ public class ProgramaDinamico {
             }
         }
 
-        if (f1[n-1] + x1 < f2[n-1] + x2) {
+        if (f1[n-1] + x1 < f2[n-1] + x2) { // aqui compara ql o menor caminho possivel, F1 ou F2
             f = f1[n-1] + x1;
             l = 1;
         } else {

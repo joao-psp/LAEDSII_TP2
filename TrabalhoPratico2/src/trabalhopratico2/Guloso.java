@@ -78,13 +78,6 @@ public class Guloso {
                 
         }
 
-        /*if (f1[n - 1] + x1 < f2[n - 1] + x2) {
-            f = f1[n - 1] + x1;
-            l = 1;
-        } else {
-            f = f2[n - 1] + x2;
-            l = 2;
-        }*/
         System.out.println();
         System.out.println("Tempos de Entrada e1=" + e1 + " and e2=" + e2);
         System.out.println("Tempos de Saida x1=" + x1 + " and x2=" + x2);
